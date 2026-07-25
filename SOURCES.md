@@ -1,10 +1,11 @@
 # 來源與影片
 
-更新日期：2026-07-23
+更新日期：2026-07-25
 
 ## 官方與研究來源
 
 - 世界衛生組織，《Global status report on road safety 2023》：https://www.who.int/publications/b/68866
+- 世界衛生組織，Road traffic injuries（2026-07-20 更新；2025 年全球道路交通死亡約 116 萬）：https://www.who.int/news-room/fact-sheets/detail/road-traffic-injuries
 - 美國聯邦公路管理局，Zero Deaths and Safe System：https://highways.dot.gov/safety/zero-deaths
 - 美國聯邦公路管理局，Zero Deaths Resources：https://highways.dot.gov/safety/zero-deaths/zero-deaths-resources
 - 美國聯邦公路管理局，Human Behavior and Road Safety：https://highways.dot.gov/safety/learn-safety/road-safety-fundamentals-html-version/unit-2-human-behavior-and-road-safety
@@ -42,4 +43,3 @@
 - 交通安全資料網站：https://sites.google.com/mail.zgjh.hc.edu.tw/safe/%E9%A6%96%E9%A0%81
 
 > 非官方網路影片用於引發觀察與討論，不單獨作為政策成效證據；核心事實仍以官方與研究來源為準。
-

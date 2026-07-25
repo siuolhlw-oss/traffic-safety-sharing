@@ -446,9 +446,9 @@ function bullets(s, items, x, y, w, opts = {}) {
   const s = slide(); page(s, 33); kicker(s, "把注意力拉回真實世界"); title(s, "即使評鑑失真，交通安全仍然真實");
   text(s, "2,858", 72, 270, 500, 120, { size: 105, bold: true, color: C.coral });
   text(s, "臺灣 2025 年道路交通事故\n30 日內死亡人數", 78, 408, 450, 90, { size: 25, lineSpacing: 1.25 });
-  text(s, "119萬", 680, 270, 480, 120, { size: 105, bold: true, color: C.teal });
-  text(s, "全球每年道路交通死亡；道路傷害仍是 5–29 歲主要死因", 688, 408, 430, 90, { size: 25, lineSpacing: 1.25 });
-  source(s, "來源：交通部 168 交通安全入口網（2026-03-25）；WHO Global status report on road safety 2023。");
+  text(s, "116萬", 680, 270, 480, 120, { size: 105, bold: true, color: C.teal });
+  text(s, "WHO 估計 2025 年全球道路交通死亡；道路傷害仍是 5–29 歲主要死因", 688, 408, 430, 90, { size: 25, lineSpacing: 1.25 });
+  source(s, "來源：交通部 168 交通安全入口網（2026-03-25）；WHO Road traffic injuries（2026-07-20，2025 年資料）。");
 }
 
 // 7
@@ -520,7 +520,18 @@ function bullets(s, items, x, y, w, opts = {}) {
 
 // 13
 {
-  const s = slide(); page(s, 40); kicker(s, "教育仍然重要，但角色要精準"); title(s, "學校真正該教的三件事");
+  const s = slide(C.yellow); page(s, 40); kicker(s, "交通安全教育的核心問題");
+  text(s, "交通安全，到底要教什麼？", 72, 125, 1100, 78, { size: 54, bold: true });
+  text(s, "教的不是一套永遠不變的規則，", 72, 245, 1000, 55, { size: 32, bold: true });
+  text(s, "而是遇到新的路況，\n仍能做出安全判斷的能力。", 72, 320, 1100, 130, { size: 54, bold: true, color: C.coral, lineSpacing: 1.04 });
+  box(s, 72, 500, 150, 10, C.teal);
+  text(s, "風險辨識｜系統理解｜公民參與", 72, 535, 900, 45, { size: 28, bold: true });
+  source(s, "內容整合：本專案 GOALS.md、Safe System 與使用者原簡報第 20–25 頁。");
+}
+
+// 14
+{
+  const s = slide(); page(s, 41); kicker(s, "教育仍然重要，但角色要精準"); title(s, "學校真正該教的三件事");
   const items=[
     ["保護自己","風險感知、視線死角、速度判斷、防衛性用路與不同環境的應變。",C.teal],
     ["看懂系統","辨識道路功能、穿越距離、車速、衝突點，以及設計如何影響行為。",C.yellow],
@@ -530,17 +541,17 @@ function bullets(s, items, x, y, w, opts = {}) {
   source(s, "內容整合：Safe System、人本交通與使用者原簡報第 20–25 頁。");
 }
 
-// 14
+// 15
 {
-  const s = slide(C.ink); page(s, 41, "#BDB9B0"); kicker(s, "不用再新增一套大型課程", C.white); title(s, "一支影片，轉成 10 分鐘的公民課", C.white);
+  const s = slide(C.ink); page(s, 42, "#BDB9B0"); kicker(s, "不用再新增一套大型課程", C.white); title(s, "一支影片，轉成 10 分鐘的公民課", C.white);
   const steps=[["看見","哪個位置讓人不安？誰最脆弱？"],["命名","問題是速度、視距、動線，還是責任設計？"],["重畫","如果容許人犯錯，道路要改哪一處？"],["發聲","用一張圖、一段理由，提出可回應的建議。"]];
   steps.forEach((st,i)=>{const x=72+i*282;box(s,x,280,250,250,C.dark2);box(s,x,280,250,10,C.yellow);text(s,st[0],x+22,320,205,42,{size:32,bold:true,color:C.white});text(s,st[1],x+22,385,205,90,{size:20,color:"#D5D0C7",lineSpacing:1.25});});
   source(s, "教學轉譯建議：觀察 → 系統語言 → 設計 → 公民表達。", "#BDB9B0");
 }
 
-// 15
+// 16
 {
-  const s = slide(C.white); page(s, 42); kicker(s, "影片不是答案，是討論的起點"); title(s, "三支可直接使用的影片");
+  const s = slide(C.white); page(s, 43); kicker(s, "影片不是答案，是討論的起點"); title(s, "三支可直接使用的影片");
   const videos=[
     ["5′","FHWA｜The Safe System Approach","官方資源：人會犯錯、責任共享、多重防護。","highways.dot.gov/safety/zero-deaths/zero-deaths-resources"],
     ["8′","BicycleDutch｜Systematic Safety","荷蘭街道如何把 Vision Zero 變成系統設計。","youtu.be/5aNtsWvNYKE"],
@@ -550,35 +561,36 @@ function bullets(s, items, x, y, w, opts = {}) {
   source(s, "非官方影片用於引發觀察與比較；政策事實請回到 FHWA、WHO、SWOV 等來源。");
 }
 
-// 16
+// 17
 {
-  const s = slide(); page(s, 43); kicker(s, "不加課，把零散議題變成進程"); title(s, "把既有班會課排成可累積的能力");
+  const s = slide(); page(s, 44); kicker(s, "不加課，把零散議題變成進程"); title(s, "把既有班會課排成可累積的能力");
   const terms=[["七上","我家在這裡：\n畫出通學路線與風險點"],["七下","危險路口：\n停、看、聽與視距判斷"],["八上","行路禮儀：\n權利義務與弱勢用路人"],["八下","乘車安全：\n速度、碰撞與防護"],["九上","大眾運輸：\n公共空間與移動公平"],["九下","防衛駕駛：\nSafe System 與公民提案"]];
   terms.forEach((t,i)=>{const x=72+i*188;box(s,x,270,164,265,C.white);box(s,x,270,164,8,i%2===0?C.blue:C.teal);text(s,t[0],x+16,300,130,34,{size:24,bold:true});text(s,t[1],x+16,360,130,120,{size:18,lineSpacing:1.25});});
   source(s, "改寫自使用者原簡報第 25–26 頁。");
 }
 
-// 17
+// 18
 {
-  const s = slide(C.white); page(s, 44); kicker(s, "減量，才有可能做深"); title(s, "停止堆疊，開始聚焦");
+  const s = slide(C.white); page(s, 45); kicker(s, "減量，才有可能做深"); title(s, "停止堆疊，開始聚焦");
   box(s,72,250,500,10,C.coral); text(s,"STOP",72,280,250,52,{size:40,bold:true,color:C.coral});
   bullets(s,["為訪視臨時補照片與成果冊","用口號與道德勸說責怪弱勢者","每個社會問題都新增一堂課","用活動數量代替風險變化"],72,350,500,{size:23,h:230});
   box(s,680,250,500,10,C.teal); text(s,"START",680,280,250,52,{size:40,bold:true,color:C.teal});
   bullets(s,["每年做一次通學路線風險盤點","每屆完成一個學生改善提案","跨公民、數學、科技課共用素材","同一網站即時保存真實工作"],680,350,500,{size:23,h:230});
 }
 
-// 18
+// 19
 {
-  const s = slide(); page(s, 45); kicker(s, "共同責任不是共同甩鍋"); title(s, "學校負責學習；政府負責讓改變發生");
+  const s = slide(); page(s, 46); kicker(s, "共同責任不是共同甩鍋"); title(s, "學校負責學習；政府負責讓改變發生");
   box(s,72,250,430,340,C.white); text(s,"學校可以承擔",100,280,360,42,{size:31,bold:true});
   bullets(s,["學生風險感知與系統素養","通學經驗與風險點的回報","跨領域公民提案與公共溝通","校內接送管理與志工協作"],100,350,350,{size:21,h:200});
   box(s,535,250,673,340,C.ink); text(s,"主管機關／教授／交通專業必須承擔",565,280,600,42,{size:31,bold:true,color:C.white});
   bullets(s,["道路設計、速度管理與執法","風險資料、工程優先順序與改善時程","一致、可重現、有申訴機制的評估","刪減行政要求並提供人力、經費、素材","學校提報後得到正式工程回應"],565,350,590,{size:20,color:C.white,h:220});
 }
 
-// 19
+// 20
 {
-  const s = slide(C.white); page(s, 46); kicker(s, "建議的新評估邏輯"); title(s, "評鑑要從「資料齊全」走向「安全改變」");
+  const s = slide(C.white); page(s, 47); kicker(s, "建議的新評估邏輯");
+  text(s, "評鑑要從「資料齊全」\n走向「安全改變」", 72, 115, 920, 120, { size: 50, bold: true, lineSpacing: 1.04 });
   const ev=[
     ["流程證據","是否建立跨局處責任、風險提報與回應機制？",C.muted],
     ["產出證據","完成哪些工程、課程與學生提案？品質如何？",C.yellow],
@@ -589,17 +601,17 @@ function bullets(s, items, x, y, w, opts = {}) {
   source(s, "評估設計參考：UK Government Magenta Book；Safe System proactive safety。");
 }
 
-// 20
+// 21
 {
-  const s = slide(C.ink); page(s, 47, "#BDB9B0"); kicker(s, "請把制度改成支持安全，而不是生產資料", C.white); title(s, "給教授與長官的三個請求", C.white);
+  const s = slide(C.ink); page(s, 48, "#BDB9B0"); kicker(s, "請把制度改成支持安全，而不是生產資料", C.white); title(s, "給教授與長官的三個請求", C.white);
   const asks=["少看一本成果冊，多看一條通學路。","新增任務前，先刪除等量行政負擔。","學校提出風險後，請給工程回應、時程與責任人。"];
   asks.forEach((a,i)=>{const y=255+i*120;box(s,72,y,1136,2,"#555555");text(s,`0${i+1}`,72,y+22,100,60,{size:44,bold:true,color:C.yellow});text(s,a,190,y+28,960,52,{size:31,bold:true,color:C.white});});
   source(s, "本頁為演講者依教育現場經驗提出的制度倡議。", "#BDB9B0");
 }
 
-// 21
+// 22
 {
-  const s = slide(C.yellow); page(s, 48); kicker(s, "最後，不要只問學校做了幾份資料");
+  const s = slide(C.yellow); page(s, 49); kicker(s, "最後，不要只問學校做了幾份資料");
   text(s, "請問孩子走出校門時，", 72, 150, 800, 68, { size: 52, bold: true });
   text(s, "這個系統，容許他犯一次錯嗎？", 72, 228, 860, 130, { size: 58, bold: true, color: C.coral, lineSpacing: 0.98 });
   box(s, 72, 445, 630, 12, C.ink);
@@ -609,11 +621,11 @@ function bullets(s, items, x, y, w, opts = {}) {
   source(s, "網站：https://sites.google.com/mail.zgjh.hc.edu.tw/safe/首頁");
 }
 
-// 22
+// 23
 {
-  const s = slide(C.white); page(s, 49); kicker(s, "帶回去繼續看"); title(s, "延伸資源與影片");
+  const s = slide(C.white); page(s, 50); kicker(s, "帶回去繼續看"); title(s, "更多資源與影片");
   const res=[
-    ["WHO｜Global road safety 2023","who.int/publications/b/68866"],
+    ["WHO｜Road traffic injuries 2026","who.int/news-room/fact-sheets"],
     ["FHWA｜Zero Deaths and Safe System","highways.dot.gov/safety/zero-deaths"],
     ["SWOV｜Sustainable Road Safety","swov.nl/.../FS Sustainable Safety.pdf"],
     ["OECD｜TALIS 2024","oecd.org/.../the-demands-of-teaching"],
@@ -625,9 +637,10 @@ function bullets(s, items, x, y, w, opts = {}) {
   source(s, "完整來源與使用說明見本專案 SOURCES.md。");
 }
 
-// 23
+// 24
 {
-  const s = slide(); page(s, 50); kicker(s, "附錄｜案例證據"); title(s, "原始訪視材料保留為案例證據", C.ink, 600);
+  const s = slide(); page(s, 51); kicker(s, "附錄｜案例證據");
+  text(s, "原始訪視材料保留為\n案例證據", 72, 100, 560, 125, { size: 50, bold: true, lineSpacing: 1.04 });
   text(s, "平時即時上傳、訪視重點、教授建議與評分表都應被保留；但它們證明的是工作歷程，不自動等於道路風險下降。", 72, 255, 500, 180, { size: 26, lineSpacing: 1.3 });
   box(s, 640, 115, 544, 445, C.white, { line: C.ink, lineWidth: 2 });
   await imageOn(s, "slide-35.png", 650, 125, 524, 425, "contain", "原簡報中的訪視評分資料");

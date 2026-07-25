@@ -41,6 +41,7 @@ h2 { max-width: 20ch; font-size: 7cqh; line-height: 1.08; letter-spacing: -.035e
 h3 { font-size: 3.1cqh; line-height: 1.2; }
 .lead { max-width: 31em; font-size: 3.7cqh; line-height: 1.55; }
 .big-quote { max-width: 18ch; font-size: 7.2cqh; line-height: 1.22; font-weight: 900; letter-spacing: -.03em; }
+.learning-answer { max-width: 25em; margin: 5cqh 0 0; font-size: 5.2cqh; line-height: 1.32; font-weight: 900; letter-spacing: -.025em; }
 .accent { color: var(--coral); }
 .teal { color: var(--teal); }
 .marker { background: linear-gradient(transparent 60%, var(--yellow) 0); }
@@ -233,6 +234,7 @@ h3 { font-size: 3.1cqh; line-height: 1.2; }
   h3 { font-size: clamp(1.7rem, 6vw, 2.5rem); }
   .lead { max-width: 34rem; font-size: clamp(1.25rem, 4.8vw, 1.8rem); line-height: 1.45; }
   .big-quote { font-size: clamp(2.7rem, 10vw, 5rem); }
+  .learning-answer { font-size: clamp(2rem, 7vw, 3.4rem); }
   .source { position: static; margin: 2.5rem 0 0; font-size: .78rem; }
   .slide-number { top: 1.6rem; right: 1.35rem; font-size: .85rem; }
   .hero-dot { width: 4.5rem; height: 4.5rem; right: 1.5rem; top: 1.5rem; }
@@ -265,4 +267,3 @@ h3 { font-size: 3.1cqh; line-height: 1.2; }
   .slide { position: relative; display: block !important; width: 13.333in; height: 7.5in; page-break-after: always; }
   .controls, .progress { display: none; }
 }
-
