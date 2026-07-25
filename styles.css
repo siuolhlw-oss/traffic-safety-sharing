@@ -76,6 +76,17 @@ h3 { font-size: 3.1cqh; line-height: 1.2; }
 .question strong { font-size: 3.3cqh; }
 .question p { margin-top: 1cqh; font-size: 2.45cqh; line-height: 1.45; }
 
+.seven-questions, .seven-steps { counter-reset: story; display: grid; grid-template-columns: repeat(7, 1fr); gap: 1.1cqw; margin-top: 7cqh; }
+.seven-questions > div, .seven-steps > div { position: relative; min-height: 25cqh; padding: 6.7cqh 1cqw 2cqh; border-top: .9cqh solid var(--coral); background: rgba(255,255,255,.52); }
+.seven-questions > div::before, .seven-steps > div::before { counter-increment: story; content: "0" counter(story); position: absolute; top: 1.5cqh; left: 1cqw; color: var(--coral); font-size: 3.4cqh; font-weight: 900; }
+.seven-questions strong, .seven-steps strong { font-size: 2.55cqh; line-height: 1.35; }
+.seven-questions > div:nth-child(5), .seven-steps > div:nth-child(5) { border-color: var(--yellow); }
+.seven-questions > div:nth-child(6), .seven-steps > div:nth-child(6) { border-color: var(--teal); }
+.seven-questions > div:nth-child(7), .seven-steps > div:nth-child(7) { border-color: var(--blue); }
+.seven-steps { margin-top: 5cqh; }
+.seven-steps > div { min-height: 20cqh; color: white; background: #242424; }
+.seven-steps + .big-quote { margin-top: 5cqh; font-size: 4.8cqh; }
+
 .metric { font-size: 14cqh; line-height: .9; font-weight: 900; letter-spacing: -.06em; }
 .metric-label { font-size: 3cqh; max-width: 18em; line-height: 1.5; }
 .metric-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 4cqw; align-items: end; margin-top: 6cqh; }
@@ -240,11 +251,11 @@ h3 { font-size: 3.1cqh; line-height: 1.2; }
   .hero-dot { width: 4.5rem; height: 4.5rem; right: 1.5rem; top: 1.5rem; }
   .hero-line { left: 1.35rem; bottom: 5rem; width: 58%; height: .55rem; }
   .split, .split--wide, .closing { grid-template-columns: 1fr; height: auto; gap: 2rem; }
-  .questions, .country-row, .stop-start, .ownership, .resource-grid, .quad-lines, .workflow, .compare, .stakeholders, .triple-metrics, .five-steps { grid-template-columns: 1fr; }
+  .questions, .country-row, .stop-start, .ownership, .resource-grid, .quad-lines, .workflow, .compare, .stakeholders, .triple-metrics, .five-steps, .seven-questions, .seven-steps { grid-template-columns: 1fr; }
   .verdicts, .ladder, .principles, .role-grid, .lesson, .timeline, .evaluation { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .system { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .system__item { min-height: 8rem; border-radius: 0; }
-  .question, .ladder__item, .principle, .role, .lesson__step, .term, .owner, .evaluation article { min-height: 0; }
+  .question, .ladder__item, .principle, .role, .lesson__step, .term, .owner, .evaluation article, .seven-questions > div, .seven-steps > div { min-height: 0; }
   .metric-grid { grid-template-columns: 1fr; gap: 2rem; }
   .metric { font-size: clamp(5rem, 24vw, 9rem); }
   .video { grid-template-columns: 4rem 1fr; }
