@@ -245,6 +245,11 @@ h3 { font-size: 3.1cqh; line-height: 1.2; }
 .case-flow > div:nth-child(6) { border-color: var(--teal); }
 .toolkit-download { display: inline-block; margin-top: 3cqh; padding: 1.5cqh 1.6cqw; border: .25cqh solid var(--yellow); color: var(--yellow); font-size: 2.4cqh; font-weight: 900; text-decoration: none; }
 .toolkit-download:hover, .toolkit-download:focus-visible { color: var(--ink); background: var(--yellow); outline: none; }
+.alignment-grid { display: grid; grid-template-columns: 12cqw 1fr 1fr; margin-top: 2.5cqh; }
+.alignment-grid > * { min-height: 8cqh; padding: 1.15cqh 1cqw; border-top: .2cqh solid var(--line); font-size: 2.25cqh; line-height: 1.35; }
+.alignment-grid > strong { min-height: 5.2cqh; color: white; background: var(--ink); font-size: 2.3cqh; }
+.alignment-grid > em { color: var(--coral); font-style: normal; font-weight: 900; }
+.alignment-gap { color: var(--muted); }
 
 @media screen and (max-width: 900px), screen and (orientation: portrait) {
   html, body { min-height: 100%; overflow: hidden; }
@@ -281,6 +286,9 @@ h3 { font-size: 3.1cqh; line-height: 1.2; }
   .video { grid-template-columns: 4rem 1fr; }
   .video a { grid-column: 2; justify-self: start; }
   .toolkit-mapping > div { grid-template-columns: 1fr; gap: .5rem; }
+  .alignment-grid { grid-template-columns: 1fr; }
+  .alignment-grid > strong { display: none; }
+  .alignment-grid > * { min-height: 0; }
   .qr { width: min(65vw, 18rem); }
   .controls { right: .75rem; bottom: .65rem; }
 }
