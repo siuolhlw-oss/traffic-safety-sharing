@@ -226,6 +226,26 @@ h3 { font-size: 3.1cqh; line-height: 1.2; }
 .five-steps strong { font-size: 2.9cqh; }
 .five-steps span { margin-top: 1.4cqh; font-size: 2.2cqh; line-height: 1.35; }
 
+.risk-scan, .survey-list, .case-flow { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2cqh 1.5cqw; margin-top: 4cqh; }
+.risk-scan > div, .survey-list > div, .case-flow > div { min-height: 15cqh; padding: 2cqh 1.4cqw; border-top: .8cqh solid var(--coral); background: rgba(255,255,255,.58); }
+.risk-scan strong, .survey-list strong, .case-flow strong { display: block; font-size: 2.8cqh; }
+.risk-scan span, .survey-list span, .case-flow span { display: block; margin-top: 1cqh; font-size: 2.15cqh; line-height: 1.4; }
+.survey-list { counter-reset: survey; }
+.survey-list > div { position: relative; padding-left: 5cqw; border-color: var(--yellow); background: #242424; }
+.survey-list > div::before { counter-increment: survey; content: "0" counter(survey); position: absolute; left: 1.2cqw; top: 1.6cqh; color: var(--yellow); font-size: 3.2cqh; font-weight: 900; }
+.survey-list span { color: #d5d0c7; }
+.toolkit-mapping { display: grid; gap: 1.4cqh; margin-top: 3.5cqh; }
+.toolkit-mapping > div { display: grid; grid-template-columns: 12cqw 12cqw 1fr; align-items: center; min-height: 11cqh; padding: 1.4cqh 1.5cqw; border-left: .8cqh solid var(--coral); background: white; }
+.toolkit-mapping strong { font-size: 2.8cqh; }
+.toolkit-mapping span { font-size: 2.5cqh; font-weight: 800; color: var(--teal); }
+.toolkit-mapping em { font-size: 2.35cqh; font-style: normal; }
+.case-flow { margin-top: 3cqh; }
+.case-flow > div { min-height: 13cqh; color: white; background: #242424; }
+.case-flow > div:nth-child(5) { border-color: var(--yellow); }
+.case-flow > div:nth-child(6) { border-color: var(--teal); }
+.toolkit-download { display: inline-block; margin-top: 3cqh; padding: 1.5cqh 1.6cqw; border: .25cqh solid var(--yellow); color: var(--yellow); font-size: 2.4cqh; font-weight: 900; text-decoration: none; }
+.toolkit-download:hover, .toolkit-download:focus-visible { color: var(--ink); background: var(--yellow); outline: none; }
+
 @media screen and (max-width: 900px), screen and (orientation: portrait) {
   html, body { min-height: 100%; overflow: hidden; }
   .deck { position: fixed; inset: 0; display: block; }
@@ -251,7 +271,7 @@ h3 { font-size: 3.1cqh; line-height: 1.2; }
   .hero-dot { width: 4.5rem; height: 4.5rem; right: 1.5rem; top: 1.5rem; }
   .hero-line { left: 1.35rem; bottom: 5rem; width: 58%; height: .55rem; }
   .split, .split--wide, .closing { grid-template-columns: 1fr; height: auto; gap: 2rem; }
-  .questions, .country-row, .stop-start, .ownership, .resource-grid, .quad-lines, .workflow, .compare, .stakeholders, .triple-metrics, .five-steps, .seven-questions, .seven-steps { grid-template-columns: 1fr; }
+  .questions, .country-row, .stop-start, .ownership, .resource-grid, .quad-lines, .workflow, .compare, .stakeholders, .triple-metrics, .five-steps, .seven-questions, .seven-steps, .risk-scan, .survey-list, .case-flow { grid-template-columns: 1fr; }
   .verdicts, .ladder, .principles, .role-grid, .lesson, .timeline, .evaluation { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .system { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .system__item { min-height: 8rem; border-radius: 0; }
@@ -260,6 +280,7 @@ h3 { font-size: 3.1cqh; line-height: 1.2; }
   .metric { font-size: clamp(5rem, 24vw, 9rem); }
   .video { grid-template-columns: 4rem 1fr; }
   .video a { grid-column: 2; justify-self: start; }
+  .toolkit-mapping > div { grid-template-columns: 1fr; gap: .5rem; }
   .qr { width: min(65vw, 18rem); }
   .controls { right: .75rem; bottom: .65rem; }
 }

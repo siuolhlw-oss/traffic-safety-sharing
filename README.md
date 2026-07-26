@@ -39,4 +39,4 @@ git push -u origin main
 - `AGENTS.md`：後續修改、驗證、commit 與 push 規範
 - `SOURCES.md`：資料與影片來源
 - `outputs/`：PowerPoint 交付檔
-
+- `outputs/019f98b3-1492-7f20-b3bf-3ff08a7d7916/交通安全組長實戰工具包.xlsx`：可下載的風險盤點、通學調查、課程媒合、工程提報與成果追蹤表
